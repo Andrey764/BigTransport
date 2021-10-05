@@ -1,0 +1,21 @@
+<div [ngClass]="{Conteiner:true}">
+    <div>
+        <table [ngClass]="{ListButton:true}">
+            <tr *ngFor="let transport of transports">
+                <td>
+                    <input [ngClass]="{Button:true}" name="{{transport.Type}}" type="button" value="{{transport.Type}}" (click)="Click(transport.Type)">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div [ngClass]="{Info:true}">
+        <h2 [ngClass]="{Head:true}">{{transports[Active].Title | uppercase}}</h2>
+        <p [ngClass]="{Description:true}">{{transports[Active].Description}}</p>
+        <div [ngClass]="{Table:true}">
+            <div [ngClass]="{Head:true}">Вес: {{transports[Active].Veight}} тон</div>
+            <div [ngClass]="{Head:true}">Длина: {{transports[Active].Length}} метров</div>
+            <div [ngClass]="{Head:true}">Высота: {{transports[Active].Height}} метров</div>
+        </div>
+    </div>
+</div>
+

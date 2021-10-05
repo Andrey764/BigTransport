@@ -1,0 +1,40 @@
+.Conteiner{
+    display: flex;
+    flex-direction: row;
+}
+.Button,
+.Head,
+.Description{
+    width: 100%;
+    text-align: center;
+}
+.Button{
+    background-color: aqua;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    height: 80%;
+}
+.Button:hover{
+    background-color: orangered;
+}
+.Description{
+    font-style: italic;
+}
+.Table{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Info{
+    width: 100%;
+    border: 2px solid aqua;
+    border-radius: 25px;
+}
+.Head{
+    text-align: center;
+    padding: 5px;
+}
+.ListButton{
+    height: auto;
+}
